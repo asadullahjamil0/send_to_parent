@@ -4,4 +4,9 @@
 <br /> <br />
 <input type="text" [(ngModel)]="name">
 
-<h1>Write in the box:  {{name}}</h1>
+<!-- Two-way binding -->
+<h1>Write in the box: {{name}}</h1>
+<!-- Template reference variable -->
+<h2>Template reference variable</h2>
+<input type="text" #box name="user" placeholder="Enter your name">
+<button (click)="getVal(box.value)">Call function</button>

@@ -14,4 +14,8 @@ export class AppComponent {
     this.data = item;
   }
   name: any;
+  // Template Reference variable 
+  getVal(item: any) {
+    console.log(item);
+  }
 }
