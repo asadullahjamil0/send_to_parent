@@ -13,4 +13,5 @@ export class AppComponent {
     console.log(item);
     this.data = item;
   }
+  name: any;
 }
