@@ -18,4 +18,14 @@ export class AppComponent {
   getVal(item: any) {
     console.log(item);
   }
+  val: { name: string, phone: number } = { name: "asadUllah", phone: 4646932 };
+  item: string[] = ["asad", "you", "bilal"];
+  getObj(item: number | boolean) {
+    if (typeof item === "number") {
+      return item * 2;
+    }
+  }
+  getArr(item: number[]) {
+
+  }
 }
