@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { timeEnd } from 'node:console';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +8,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'send_to_parent';
+  data = "";
+  updateData(item: string) {
+    console.log(item);
+    this.data = item;
+  }
 }
