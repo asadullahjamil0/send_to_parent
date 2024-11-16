@@ -22,10 +22,11 @@ export class AppComponent {
   item: string[] = ["asad", "you", "bilal"];
   getObj(item: number | boolean) {
     if (typeof item === "number") {
-      return item * 2;
+      console.log(item * 2);
     }
   }
   getArr(item: number[]) {
-
   }
+
+  getDate = Date();
 }

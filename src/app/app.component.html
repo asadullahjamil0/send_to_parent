@@ -10,3 +10,9 @@
 <h2>Template reference variable</h2>
 <input type="text" #box name="user" placeholder="Enter your name">
 <button (click)="getVal(box.value)">Call function</button>
+
+<!-- Pipes In Angular -->
+<h1>Pipes in Angular</h1>
+<h2>{{title | uppercase}}</h2>
+<h2>{{title | lowercase}}</h2>
+<h2>{{getDate | date:'fullDate'}}</h2>
